@@ -23,6 +23,7 @@ pip install -r requirements.txt
 
 ### Configure Environment Variable
 Create a ```.env```file inside ```/src```:
+
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_HOST=localhost
