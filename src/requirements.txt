@@ -1,0 +1,8 @@
+python-dotenv
+sqlalchemy
+psycopg2-binary
+sqlalchemy-utils
+pandas
+matplotlib
+seaborn
+tqdm
