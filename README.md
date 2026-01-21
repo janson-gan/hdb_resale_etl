@@ -16,12 +16,12 @@ The pipeline automates the process of:
 git clone <repo-url>
 cd HDB-Resales-ETL/src
 ```
-### Install Dependencies
+### 2. Install Dependencies
 ```
 pip install -r requirements.txt
 ```
 
-### Configure Environment Variable
+### 3.Configure Environment Variable
 Create a ```.env```file inside ```/src```:
 ```
 DB_USER=your_username
@@ -30,3 +30,47 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=hdb_resales
 ```
+
+## ⚙️ Setup Instructions
+
+### 1. Step-by-Step
+- Create Database
+```
+python create_db.py
+```
+- Create Table
+```
+python create_table.py
+```
+- Place Raw Data
+- Put raw CSV files into data/raw/.
+- Run ETL
+- Option A: Run each phase individually:
+```
+python etl_extract.py
+python etl_transform.py
+python etl_load.py
+```
+- Option B: Run full pipeline:
+```
+python hdb_etl_pipeline.py
+```
+## ✅ Verification
+- Check row counts between source and target.
+- Run sample queries in PostgreSQL to confirm data integrity.
+
+## 🔧 Maintenance & Improvements
+- Automate extraction via API.
+- Add error handling and retry logic.
+- Schedule pipeline with Airflow or Cron.
+
+## 📎 Appendix
+- Glossary: ETL = Extract, Transform, Load.
+- References:
+  - [PostgreSQL](https://www.postgresql.org/docs/)
+  - [pandas](https://pandas.pydata.org/docs/)
+  - [SQLAchemy](https://docs.sqlalchemy.org/en/20/)
+
+
+
+
