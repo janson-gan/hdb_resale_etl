@@ -1,4 +1,6 @@
 # 🏠 HDB Resales ETL Project
+### A joint project by team of 4 including myself during my Junior Data Engineer bootcamp
+### I am responsible for development of LOAD process.
 
 ## 📘 Overview
 This project implements an **Extract–Transform–Load (ETL) pipeline** for Singapore HDB resale flat data.  
