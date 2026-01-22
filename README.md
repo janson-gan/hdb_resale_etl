@@ -1,5 +1,5 @@
 # 🏠 HDB Resales ETL Project
-### A joint project by team of 4 including myself during my Junior Data Engineer bootcamp
+### A joint project by team of 4 including myself during my Junior Data Engineer bootcamp with Generation Singapore
 ### I am responsible for development of LOAD process.
 
 ## 📘 Overview
